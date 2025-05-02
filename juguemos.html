@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/images/logo.png">
+    <title>Proyecto-Final</title>
+</head>
+<body onscroll="navBgOn()">
+    <nav class="">
+        <a href="index.html">
+            <svg width="200" height="90">
+                <rect x="45" y="5" width="80" height="50" class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="2"></rect>
+                <rect x="50" y="10" width="70" height="40" class="mon2" fill="#000000" stroke="#2F3645" stroke-width="2"></rect>
+                <rect x="75" y="55" width="20" height="10" class="mon1" fill="#767a81de" stroke="#2F3645" stroke-width="0"></rect>
+                <polygon points="50 70, 120 70,130 80, 40 80" fill="#767a81de" stroke="#2F3645" stroke-width="2" class="mon1" stroke="#2F3645"></polygon>
+                <polygon points="55 72, 115 72, 122 78, 48 78" fill="#000000" class="mon2" stroke="#2F3645"></polygon>
+                <line x1="55" y1="19" x2="100" y2="19" stroke="transparent" stroke-width="3" class="svg-code-line"></line>
+                <line x1="55" y1="24" x2="100" y2="24" stroke="transparent" stroke-width="3" class="svg-code-line"></line>
+                <line x1="55" y1="29" x2="70" y2="29" stroke="transparent" stroke-width="3" class="svg-code-line"></line>
+                <line x1="55" y1="33" x2="115" y2="33" stroke="transparent" stroke-width="3" class="svg-code-line"></line>
+                <line x1="55" y1="38" x2="115" y2="38" stroke="transparent" stroke-width="3" class="svg-code-line"></line>
+            </svg>
+        </a>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="./historia.html" class="menu-item-a">HISTORIA</a>
+            </li>
+            <li class="menu-item">
+                <a href="./juguemos.html" class="menu-item-a">JUGUEMOS</a>
+            </li>
+        </ul>
+    </nav>
+    <header id="header-juguemos">
+        <h1 class="blue-tint">JUGUEMOS UN POCO</h1>
+    </header>
+    <main>
+        <h2 class="juego-title">Armemos el rompecabezas y veamos que imagen es...</h2>
+        <section class="juego">
+            <div id="upper-section">
+                <img src="./assets/images/rompe2.png" alt="imagen rompecabezas" class="images" id="image1">
+                <div class="boxes">
+                    <div class="box boxHover" id="box-drop">
+                        <p class="p-juego">Arrastre y suelte la imágene aquí</p>
+                    </div>
+                    <div class="box boxHover" id="box-drop2">
+                        <p class="p-juego">Arrastre y suelte la imágene aquí</p>
+                    </div>
+                    <div class="box boxHover" id="box-drop3">
+                        <p class="p-juego">Arrastre y suelte la imágene aquí</p>
+                    </div>
+                </div>
+                <img src="./assets/images/Rompe1.png" alt="imagen rompecabezas" class="images" id="image2">
+            </div>
+            <div id="bottom-section">
+                <img src="./assets/images/Rompe3.png" alt="imagen rompecabezas" class="images" id="image3">
+            </div>
+        </section>
+        <button onclick="restartGame()" class="restart-juego">Reiniciar</button>
+    </main>
+    <script src="./script3.js"></script>
+</body>
+</html>
